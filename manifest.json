@@ -1,0 +1,23 @@
+{
+  "name": "Prive | Cleaner browsing",
+  "description": "A browser extension to remove all nasties of the web, includinga ds, trackers and cookies",
+  "version": "1.1",
+  "manifest_version": 3,
+  "permissions": [
+    "topSites",
+    "storage",
+    "history",
+    "cookies",
+    "tabs",
+    "webNavigation",
+    "webRequest",
+    "management",
+    "browsingData"
+  ],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_title": "Prive",
+    "default_icon": "icon.png",
+    "default_popup": "index.html"
+  }
+}
