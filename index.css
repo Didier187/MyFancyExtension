@@ -22,7 +22,7 @@ p {
   color: #343138;
 }
 .container h1 {
-  font-size: 2.5rem;
+  font-size: 1rem;
   font-weight: 700;
   color: white;
   text-align: center;
@@ -42,7 +42,7 @@ p {
   left: 0;
   right: 0;
   opacity: 0.1;
-  font-size: 5rem;
+  font-size: 1.5rem;
 }
 
 .container {
@@ -53,7 +53,7 @@ p {
   color: #fff;
   /* padding:2em; */
 }
-input{
+input {
   accent-color: #946bda;
 }
 .counts {
@@ -93,12 +93,15 @@ input{
   height: 15px;
   width: 100%;
 }
-.counts p {
+#count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f1235;
   text-align: center;
-  font-weight: bold;
   margin: 0;
-  color: black;
-  border-radius: 12px;
+  padding: 0;
+  color: #1f1235;
+  text-transform: uppercase;
 }
 .btn-container {
   display: flex;
@@ -110,68 +113,37 @@ input{
   margin-top: 2em;
 }
 
-#scan,
-#delete-cookies,
 #clear-hx {
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 50%;
   text-transform: uppercase;
   cursor: pointer;
   font-weight: bold;
   border-radius: 2px;
   color: #1f1235;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 13px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8em;
+  padding: 0.5em;
   border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
 }
-#delete-cookies svg,
-#scan svg,
+#clear-hx:hover {
+  background-color: #1f1235;
+  color: white;
+}
 #clear-hx svg {
   width: 12px;
   height: 17px;
   margin: 0;
   margin-right: 0.5em;
 }
-#delete-cookies {
-  background-color: #a786df;
-  color: white;
-}
-#scan {
-  background-color: #f7b500;
-  color: white;
-}
-#scan:hover,
-#delete-cookies:hover {
-  font-weight: 700;
-  font-family: "Inter", sans-serif;
-  transition: all 0.3s ease-in-out;
-}
-#scan:hover {
-  color: #fbdd74;
-  border: 1px solid #fbdd74;
-}
-#delete-cookies:hover {
-  color: #00ebc7;
-  border: 1px solid #00ebc7;
-  background-color: #946bda;
-}
-#history-list li {
-  list-style: none;
-  margin: 0.5em 0;
-  font-weight: bold;
-  color: #1f1235;
-  border: 1px solid lightgray;
-  text-align: center;
-}
+
 details {
-  color: #343138;
   width: 100%;
-  border-radius: 8px;
   margin-top: 1em;
 }
 summary {
@@ -191,24 +163,87 @@ summary svg {
 summary::-webkit-details-marker {
   display: none;
 }
-.power-on {
+.settings {
+  padding-top: 0.52em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+  margin-top: 0.5em;
+  border-top: 1px solid lightgray;
+}
+.settings p {
+  font-size: 13px;
+  width: 100%;
+}
+.settings div {
+  display: flex;
+  width: 100%;
+  gap: 2em;
+}
+.settings button {
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+  color: #1f1235;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+#power {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #1f1235;
+  background-color: #244669;
+  border: none;
   color: white;
   font-weight: bold;
-
-  border-radius: 12px;
-  padding: 1em;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
-.power-on svg {
+#power:hover {
+  scale: 1.1;
+}
+#power svg {
   margin: 0;
+}
+.on svg {
   color: #00ebc7;
 }
-.status{
+.off svg {
+  color: #d3cbcb;
+}
+.on {
   color: #00ebc7;
+}
+.off {
+  color: #d3cbcb;
+}
+#status {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+p {
+  margin: 0;
+}
+#reset-extension:hover {
+  border: 1px solid #1f1235;
+}
+.ignored {
+  background-color: #00ebc7;
+  color: #1f1235;
 }
