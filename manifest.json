@@ -1,19 +1,9 @@
 {
-  "name": "Prive | Cleaner browsing",
-  "description": "A browser extension to remove all nasties of the web, includinga ds, trackers and cookies",
-  "version": "1.1",
+  "name": "Prive | A cleaner browsing",
+  "description": "A browser extension to remove all trackers and cookies as soon as you leave a website. no user data is collected. ",
+  "version": "0.0.1",
   "manifest_version": 3,
-  "permissions": [
-    "topSites",
-    "storage",
-    "history",
-    "cookies",
-    "tabs",
-    "webNavigation",
-    "webRequest",
-    "management",
-    "browsingData"
-  ],
+  "permissions": ["storage", "history", "cookies", "webRequest", "tabs"],
   "host_permissions": ["<all_urls>"],
   "action": {
     "default_title": "Prive",
